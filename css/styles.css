@@ -92,16 +92,15 @@ body {
 /* logo */
 .logo {
   margin-right: 85px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
 }
-
-/* .logo-accent:hover,
-.logo-accent:focus {
-} */
 
 .logo-accent {
   color: #000000;
@@ -145,14 +144,8 @@ body {
   align-items: center;
 }
 
-/* .site-address .item {
-  height: 80px;
-  display: inline-flex;
-} */
-
 .site-address .item:not(:last-child) {
   margin-right: 30px;
-  /* margin-right: 50px; */
 }
 
 .site-address .link {
@@ -168,6 +161,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   /* outline: 1px solid tomato; */
 }
 
@@ -237,6 +233,8 @@ body {
   line-height: 1.8;
   letter-spacing: 0.06em;
   text-decoration: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -410,6 +408,9 @@ body {
 
   color: #afb1b8;
   background-color: var(--primary-white-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social:hover,
@@ -447,6 +448,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-border:hover,
@@ -471,18 +474,20 @@ body {
 }
 
 .button-list {
+  border: none;
   padding: 6px 22px;
-
+  border-radius: 4px;
+  color: var(--title-text-color);
+  background-color: var(--primary-grey-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
-  font-family: inherit;
-  border: none;
-  border-radius: 4px;
-  color: var(--title-text-color);
-  background-color: var(--primary-grey-color);
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list:hover,

@@ -445,26 +445,19 @@ body {
   display: flex;
 }
 
-/* .company-box .icons {
-  width: calc((100% - (30px * 5)) / 6);
-  height: 90px;
-
-  outline: 1px solid rosybrown;
-} */
-
 .company-box .icons:not(:first-child) {
   margin-left: 30px;
 }
 
 .logo-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   color: #afb1b8;
   border: 1px solid;
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   transition: color 250ms var(--timing-function);
 }
